@@ -1,111 +1,141 @@
 // File: js/script.js
 
-// Data produk dengan link ke folder images
+// Data produk dengan harga dan label best seller
 const produkData = [
     {
         id: 1,
-        nama: "Tenda Kerucut",
-        gambar: "images/produk/tenda-kerucut.jpg",
-        deskripsi: "Tenda kerucut untuk kebutuhan pramuka dan outdoor",
-        kategori: "tenda"
+        nama: "Tenda Regu Pleton",
+        gambar: "images/produk/tenda-regu-pleton.jpg",
+        harga: "Rp 6.500.000",
+        deskripsi: "Tenda regu pleton untuk kebutuhan militer dan pramuka",
+        kategori: "tenda",
+        bestSeller: true
     },
     {
         id: 2,
-        nama: "Tenda Linmas / Gazebo",
-        gambar: "images/produk/tenda-linmas.jpg",
-        deskripsi: "Tenda linmas atau gazebo untuk kebutuhan posko dan acara outdoor",
-        kategori: "tenda"
+        nama: "Tenda Pleton BNPB",
+        gambar: "images/produk/tenda-pleton-bnpb.jpg",
+        harga: "Rp 8.800.000",
+        deskripsi: "Tenda pleton standar BNPB untuk penanggulangan bencana",
+        kategori: "tenda",
+        bestSeller: true
     },
     {
         id: 3,
-        nama: "Tenda Terop Lengkung",
-        gambar: "images/produk/tenda-terop-lengkung.jpg",
-        deskripsi: "Tenda terop dengan desain lengkung untuk kebutuhan usaha",
-        kategori: "tenda"
+        nama: "Tenda terop datar + variasi",
+        gambar: "images/produk/tenda-terop-variasi.jpg",
+        harga: "Rp 8.700.000",
+        deskripsi: "Tenda terop datar dengan berbagai variasi desain",
+        kategori: "tenda",
+        bestSeller: true
     },
     {
         id: 4,
-        nama: "Tenda Terop Oval",
-        gambar: "images/produk/tenda-terop-oval.jpg",
-        deskripsi: "Tenda terop oval untuk kebutuhan cafe dan tempat usaha",
-        kategori: "tenda"
+        nama: "Tenda Kerucut",
+        gambar: "images/produk/tenda-kerucut.jpg",
+        harga: "Rp 2.300.000",
+        deskripsi: "Tenda kerucut untuk kebutuhan pramuka dan outdoor",
+        kategori: "tenda",
+        bestSeller: true
     },
     {
         id: 5,
-        nama: "Tenda Terop Datar 4x6",
-        gambar: "images/produk/tenda-terop-datar.jpg",
-        deskripsi: "Tenda terop datar ukuran 4x6 meter untuk berbagai keperluan",
-        kategori: "tenda"
+        nama: "Tenda Linmas / Gazebo",
+        gambar: "images/produk/tenda-linmas.jpg",
+        harga: "Rp 2.200.000",
+        deskripsi: "Tenda linmas atau gazebo untuk kebutuhan posko dan acara outdoor",
+        kategori: "tenda",
+        bestSeller: true
     },
     {
         id: 6,
-        nama: "Tenda Posko",
-        gambar: "images/produk/tenda-posko.jpg",
-        deskripsi: "Tenda posko untuk kebutuhan darurat dan acara",
-        kategori: "tenda"
+        nama: "Tenda Terop Lengkung",
+        gambar: "images/produk/tenda-terop-lengkung.jpg",
+        harga: "Rp 6.000.000",
+        deskripsi: "Tenda terop dengan desain lengkung untuk kebutuhan usaha",
+        kategori: "tenda",
+        bestSeller: true
     },
     {
         id: 7,
-        nama: "Tenda Regu Pleton",
-        gambar: "images/produk/tenda-regu-pleton.jpg",
-        deskripsi: "Tenda regu pleton untuk kebutuhan militer dan pramuka",
-        kategori: "tenda"
+        nama: "Tenda Terop Oval",
+        gambar: "images/produk/tenda-terop-oval.jpg",
+        harga: "Rp 6.700.000",
+        deskripsi: "Tenda terop oval untuk kebutuhan cafe dan tempat usaha",
+        kategori: "tenda",
+        bestSeller: true
     },
     {
         id: 8,
-        nama: "Tenda Pleton BNPB",
-        gambar: "images/produk/tenda-pleton-bnpb.jpg",
-        deskripsi: "Tenda pleton standar BNPB untuk penanggulangan bencana",
-        kategori: "tenda"
+        nama: "Tenda Terop Datar 4x6",
+        gambar: "images/produk/tenda-terop-datar.jpg",
+        harga: "Rp 6.000.000",
+        deskripsi: "Tenda terop datar ukuran 4x6 meter untuk berbagai keperluan",
+        kategori: "tenda",
+        bestSeller: true
     },
     {
         id: 9,
-        nama: "Terpal atap terop kapjeep",
-        gambar: "images/produk/terpal-atap-terop.jpg",
-        deskripsi: "Terpal atap tenda terop berkualitas tinggi",
-        kategori: "aksesoris"
+        nama: "Tenda Posko",
+        gambar: "images/produk/tenda-posko.jpg",
+        harga: "Rp 4.500.000",
+        deskripsi: "Tenda posko untuk kebutuhan darurat dan acara",
+        kategori: "tenda",
+        bestSeller: true
     },
     {
         id: 10,
-        nama: "Terpal canvas Hotmix 87.000m²",
-        gambar: "images/produk/terpal-canvas.jpg",
-        deskripsi: "Terpal canvas untuk kebutuhan konstruksi dan proyek",
-        kategori: "aksesoris"
+        nama: "Terpal atap terop kapjeep",
+        gambar: "images/produk/terpal-atap-terop.jpg",
+        harga: "Rp 1.200.000",
+        deskripsi: "Terpal atap tenda terop berkualitas tinggi",
+        kategori: "aksesoris",
+        bestSeller: true
     },
     {
         id: 11,
-        nama: "Tenda terop datar + variasi",
-        gambar: "images/produk/tenda-terop-variasi.jpg",
-        deskripsi: "Tenda terop datar dengan berbagai variasi desain",
-        kategori: "tenda"
+        nama: "Terpal canvas Hotmix 87.000m²",
+        gambar: "images/produk/terpal-canvas.jpg",
+        harga: "Rp 2.200.000",
+        deskripsi: "Terpal canvas untuk kebutuhan konstruksi dan proyek",
+        kategori: "aksesoris",
+        bestSeller: true
     },
     {
         id: 12,
         nama: "Gerobak Sampah 150x80x100",
         gambar: "images/produk/gerobak-sampah.jpg",
+        harga: "Rp 1.950.000",
         deskripsi: "Gerobak sampah dengan ukuran 150x80x100 cm",
-        kategori: "gerobak"
+        kategori: "gerobak",
+        bestSeller: true
     },
     {
         id: 13,
         nama: "Gerobak Sorong",
         gambar: "images/produk/gerobak-sorong.jpg",
+        harga: "Rp 850.000",
         deskripsi: "Gerobak sorong untuk kebutuhan usaha dan industri",
-        kategori: "gerobak"
+        kategori: "gerobak",
+        bestSeller: true
     },
     {
         id: 14,
         nama: "Gerobak Troli Kapasitas 300KG",
         gambar: "images/produk/gerobak-troli.jpg",
+        harga: "Rp 365.000",
         deskripsi: "Gerobak troli dengan kapasitas angkut hingga 300 kg",
-        kategori: "gerobak"
+        kategori: "gerobak",
+        bestSeller: true
     },
     {
         id: 15,
         nama: "Hand Truck Kapastitas 500KG",
         gambar: "images/produk/hand-truck.jpg",
+        harga: "Rp 750.000",
         deskripsi: "Hand truck dengan kapasitas angkut hingga 500 kg",
-        kategori: "gerobak"
+        kategori: "gerobak",
+        bestSeller: true
     }
 ];
 
@@ -118,8 +148,13 @@ function tampilkanProduk() {
     produkData.forEach(produk => {
         const produkElement = document.createElement('div');
         produkElement.className = 'produk__item';
+        
+        // Tambahkan badge best seller jika produk adalah best seller
+        const bestSellerBadge = produk.bestSeller ? '<div class="best-seller">Best Seller</div>' : '';
+        
         produkElement.innerHTML = `
             <div class="produk__image">
+                ${bestSellerBadge}
                 <img src="${produk.gambar}" alt="${produk.nama}" loading="lazy">
                 <div class="produk__overlay">
                     <a href="${produk.gambar}" class="produk__zoom" data-lightbox="produk" data-title="${produk.nama}">
@@ -129,6 +164,7 @@ function tampilkanProduk() {
             </div>
             <div class="produk__info">
                 <h3>${produk.nama}</h3>
+                <div class="harga">${produk.harga}</div>
                 <p>${produk.deskripsi}</p>
                 <a href="#" class="produk__button pesan-sekarang" data-produk="${produk.nama}">Pesan Sekarang</a>
             </div>
