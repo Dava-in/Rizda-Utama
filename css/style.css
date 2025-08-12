@@ -1,4 +1,4 @@
-/* ===== VARIABEL GLOBAL ===== */
+/* ===== GLOBAL VARIABLES ===== */
 :root {
     --primary: #2c3e50;
     --secondary: #3498db;
@@ -13,7 +13,7 @@
     --border-radius: 8px;
 }
 
-/* ===== DASAR STYLING ===== */
+/* ===== BASE STYLING ===== */
 * {
     margin: 0;
     padding: 0;
@@ -38,6 +38,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 a {
@@ -74,7 +75,6 @@ a {
     height: 48px;
     width: auto;
     object-fit: contain;
-    display: block;
     border-radius: 4px;
 }
 
