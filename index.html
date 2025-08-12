@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https:; frame-src https://www.google.com; connect-src 'self'; font-src 'self' https://cdnjs.cloudflare.com; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://wa.me https://web.whatsapp.com whatsapp://">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="X-Content-Type-Options" content="nosniff">
+    <meta name="X-Frame-Options" content="DENY">
+    <meta name="X-XSS-Protection" content="1; mode=block">
     <title>Rizda Utama | Aneka Tenda dan Gerobak Troli</title>
     
-    <!-- Favicon menggunakan logo.jpg yang sudah ada -->
+    <!-- Favicon -->
     <link rel="icon" href="images/logo.jpg" type="image/jpeg">
     <link rel="shortcut icon" href="images/logo.jpg" type="image/jpeg">
     
-    <!-- Stylesheets dan preload -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Preload -->
     <link rel="preload" href="images/hero-bg.jpg" as="image" media="(min-width: 768px)">
     <link rel="preload" href="images/hero-bg-mobile.jpg" as="image" media="(max-width: 767px)">
+    <link rel="preload" href="js/script.js" as="script">
 </head>
 <body>
     <!-- Header -->
@@ -89,10 +97,10 @@
                     </div>
 
                     <div class="social-media">
-                        <a href="https://www.instagram.com/rizdautama" target="_blank" class="social-icon">
+                        <a href="https://www.instagram.com/rizdautama" target="_blank" rel="noopener noreferrer" class="social-icon">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.facebook.com/rizdautama" target="_blank" class="social-icon">
+                        <a href="https://www.facebook.com/rizdautama" target="_blank" rel="noopener noreferrer" class="social-icon">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="mailto:rizdautama638@gmail.com" class="social-icon">
@@ -101,7 +109,7 @@
                     </div>
                 </div>
                 <div class="about__map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.324234704741!2d112.3539759!3d-7.4109995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e781124cb152f81%3A0xe8a9efc482718504!2sRUMKM%20varian%20tenda%20dan%20gerobak%20troli%20%7C%20murah!5e0!3m2!1sen!2sid!4v1621234567890!5m2!1sen!2sid" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.324234704741!2d112.3539759!3d-7.4109995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e781124cb152f81%3A0xe8a9efc482718504!2sRUMKM%20varian%20tenda%20dan%20gerobak%20troli%20%7C%20murah!5e0!3m2!1sen!2sid!4v1621234567890!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -133,7 +141,7 @@
                         <i class="fas fa-phone-alt"></i>
                         <div>
                             <h4>Telepon/WhatsApp</h4>
-                            <a href="https://wa.me/6285213302218">0852-1330-2218</a>
+                            <a href="https://wa.me/6285213302218" rel="noopener noreferrer">0852-1330-2218</a>
                         </div>
                     </div>
                     <div class="info-item">
@@ -147,7 +155,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h4>Alamat</h4>
-                            <a href="https://www.google.com/maps/place/RUMKM+varian+tenda+dan+gerobak+troli+%7C+murah/@-7.4109995,112.3539759,15z/data=!4m6!3m5!1s0x2e781124cb152f81:0xe8a9efc482718504!8m2!3d-7.4108953!4d112.3539979!16s%2Fg%2F11y3m_gfrn?entry=ttu" target="_blank">
+                            <a href="https://www.google.com/maps/place/RUMKM+varian+tenda+dan+gerobak+troli+%7C+murah/@-7.4109995,112.3539759,15z/data=!4m6!3m5!1s0x2e781124cb152f81:0xe8a9efc482718504!8m2!3d-7.4108953!4d112.3539979!16s%2Fg%2F11y3m_gfrn?entry=ttu" target="_blank" rel="noopener noreferrer">
                                 Jatibabah, Mojowatesrejo, Kec. Kemlagi, Kabupaten Mojokerto, Jawa Timur 61353
                             </a>
                         </div>
@@ -155,8 +163,8 @@
                 </div>
                 <div class="kontak__form">
                     <form id="formKontak">
-                        <input type="text" placeholder="Nama Anda" required>
-                        <input type="tel" placeholder="Nomor WhatsApp" required>
+                        <input type="text" placeholder="Nama Anda" required pattern="[A-Za-z ]+" title="Hanya huruf diperbolehkan">
+                        <input type="tel" placeholder="Nomor WhatsApp" required pattern="[0-9]{10,15}" title="Masukkan nomor telepon yang valid">
                         <select required>
                             <option value="" disabled selected>Pilih Produk</option>
                             <option value="Tenda Kerucut">Tenda Kerucut</option>
@@ -175,7 +183,7 @@
                             <option value="Gerobak Troli Kapasitas 300KG">Gerobak Troli Kapasitas 300KG</option>
                             <option value="Hand Truck Kapastitas 500KG">Hand Truck Kapastitas 500KG</option>
                         </select>
-                        <textarea placeholder="Pesan Anda" required></textarea>
+                        <textarea placeholder="Pesan Anda" required maxlength="500"></textarea>
                         <button type="submit" class="submit-btn">
                             <i class="fas fa-paper-plane"></i> Kirim Pesan
                         </button>
@@ -192,10 +200,10 @@
                 <div class="footer__about">
                     <p>Produsen tenda dan gerobak berkualitas dengan harga kompetitif.</p>
                     <div class="social-media">
-                        <a href="https://www.instagram.com/rizdautama" target="_blank" class="social-icon">
+                        <a href="https://www.instagram.com/rizdautama" target="_blank" rel="noopener noreferrer" class="social-icon">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.facebook.com/rizdautama" target="_blank" class="social-icon">
+                        <a href="https://www.facebook.com/rizdautama" target="_blank" rel="noopener noreferrer" class="social-icon">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="mailto:rizdautama638@gmail.com" class="social-icon">
@@ -217,7 +225,7 @@
                     <p><i class="fas fa-phone-alt"></i> 0852-1330-2218</p>
                     <p><i class="fas fa-envelope"></i> rizdautama638@gmail.com</p>
                     <p><i class="fas fa-map-marker-alt"></i> 
-                        <a href="https://www.google.com/maps/place/RUMKM+varian+tenda+dan+gerobak+troli+%7C+murah/@-7.4109995,112.3539759,15z/data=!4m6!3m5!1s0x2e781124cb152f81:0xe8a9efc482718504!8m2!3d-7.4108953!4d112.3539979!16s%2Fg%2F11y3m_gfrn?entry=ttu" target="_blank">
+                        <a href="https://www.google.com/maps/place/RUMKM+varian+tenda+dan+gerobak+troli+%7C+murah/@-7.4109995,112.3539759,15z/data=!4m6!3m5!1s0x2e781124cb152f81:0xe8a9efc482718504!8m2!3d-7.4108953!4d112.3539979!16s%2Fg%2F11y3m_gfrn?entry=ttu" target="_blank" rel="noopener noreferrer">
                             Jatibabah, Mojowatesrejo, Kec. Kemlagi, Kabupaten Mojokerto, Jawa Timur 61353
                         </a>
                     </p>
@@ -231,11 +239,12 @@
 
     <!-- Floating WhatsApp -->
     <div class="floating-wa">
-        <a href="https://wa.me/6285213302218" target="_blank" aria-label="Chat via WhatsApp">
+        <a href="https://wa.me/6285213302218" target="_blank" rel="noopener noreferrer" aria-label="Chat via WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
 
-    <script src="js/script.js"></script>
+    <!-- External JavaScript -->
+<script src="js/script.js" defer></script>
 </body>
 </html>
